@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LibSphere — Каталог & Поиск</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <div class="logo-icon">LS</div>
+        <div class="logo-text">
+          <span class="logo-title">LibSphere</span>
+          <span class="logo-subtitle">Умная библиотека</span>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Главная</a></li>
+        <li><a href="index.html" class="nav-link active">Каталог & Поиск</a></li>
+        <li><a href="account-reader.html" class="nav-link">Кабинет & Ридер</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Искать книгу...">
+        </div>
+        <div class="user-profile">
+          <img class="user-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Алексей К.">
+          <span class="user-name">Алексей К.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="catalog-layout">
+      <!-- Фильтры -->
+      <aside class="filters-sidebar">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+          <strong>Фильтры</strong>
+          <a href="#" style="font-size: 12px; color: var(--text-muted);">Сбросить</a>
+        </div>
+        <div class="filter-group">
+          <div class="filter-title">Жанры</div>
+          <label class="filter-item"><input type="checkbox"> Классическая проза</label>
+          <label class="filter-item"><input type="checkbox"> Фантастика & Фэнтези</label>
+          <label class="filter-item"><input type="checkbox"> Психология</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-title">Формат</div>
+          <label class="filter-item"><input type="checkbox" checked> Бумажная книга</label>
+          <label class="filter-item"><input type="checkbox"> Электронная версия</label>
+        </div>
+      </aside>
+
+      <!-- Сетка книг -->
+      <section style="flex: 1;">
+        <div class="catalog-header">
+          <span>Найдено в каталоге: <strong>124 книги</strong></span>
+          <span>Сортировать по: <strong>Популярности</strong></span>
+        </div>
+        <div class="catalog-grid">
+          <a href="book.html" class="catalog-card">
+            <img src="https://m.media-amazon.com/images/I/81S88XmN-OL._AC_UF1000,1000_QL80_.jpg" alt="Мастер и Маргарита">
+            <span class="card-genre">Классика</span>
+            <div class="card-title">Мастер и Маргарита</div>
+            <div class="card-author">Михаил Булгаков</div>
+            <div class="card-footer">
+              <span>⭐ 4.9</span>
+              <span class="status-in">В наличии</span>
+            </div>
+          </a>
+          <a href="book.html" class="catalog-card">
+            <img src="https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_UF1000,1000_QL80_.jpg" alt="Дюна">
+            <span class="card-genre">Фантастика</span>
+            <div class="card-title">Дюна</div>
+            <div class="card-author">Фрэнк Герберт</div>
+            <div class="card-footer">
+              <span>⭐ 4.8</span>
+              <span class="status-in">В наличии</span>
+            </div>
+          </a>
+          <a href="book.html" class="catalog-card">
+            <img src="https://m.media-amazon.com/images/I/71I3P3vE1pL._AC_UF1000,1000_QL80_.jpg" alt="Выгорание">
+            <span class="card-genre">Психология</span>
+            <div class="card-title">Выгорание</div>
+            <div class="card-author">Эмили Нагоски</div>
+            <div class="card-footer">
+              <span>⭐ 4.7</span>
+              <span class="status-online">Только онлайн</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>LibSphere</h3>
+          <p>Современная электронная библиотека.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог книг</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <p>Москва, ул. Чтения, 12</p>
+          <p>info@libsphere.ru</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Электронная библиотека LibSphere.</span>
+        <span>Сделано с любовью к книгам</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

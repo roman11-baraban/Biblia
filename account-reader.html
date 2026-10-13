@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LibSphere — Кабинет & Ридер</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/account-reader.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <div class="logo-icon">LS</div>
+        <div class="logo-text">
+          <span class="logo-title">LibSphere</span>
+          <span class="logo-subtitle">Умная библиотека</span>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Каталог & Поиск</a></li>
+        <li><a href="account-reader.html" class="nav-link active">Кабинет & Ридер</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Искать книгу...">
+        </div>
+        <div class="user-profile">
+          <img class="user-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Алексей К.">
+          <span class="user-name">Алексей К.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="account-layout">
+      <!-- Левая колонка: Кабинет -->
+      <aside class="account-sidebar">
+        <div class="user-card" style="margin-bottom: 16px;">
+          <div class="user-profile-header">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Алексей">
+            <div>
+              <h3>Алексей Ковалев</h3>
+              <p style="font-size: 12px; color: var(--text-muted);">Читатель со стажем</p>
+            </div>
+          </div>
+          <p style="font-size: 13px;">Билет: <strong>№384-91</strong></p>
+          <p style="font-size: 12px; color: var(--text-muted);">Дата регистрации: 14.09.2023</p>
+        </div>
+
+        <div class="reserved-card">
+          <h4>Забронированные книги</h4>
+          <div style="margin-top: 12px; font-size: 13px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+            <p><strong>Дюна</strong></p>
+            <p style="color: orange; font-size: 11px;">• Ожидает выдачи до 29.01</p>
+          </div>
+          <div style="margin-top: 8px; font-size: 13px;">
+            <p><strong>О дивный новый мир</strong></p>
+            <p style="color: #2b8a3e; font-size: 11px;">• Бронь подтверждена</p>
+          </div>
+        </div>
+      </aside>
+      <section class="reader-box">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <h2>Мастер и Маргарита</h2>
+            <p style="font-size: 12px; color: var(--text-muted);">Глава 12. Черная магия и ее разоблачение</p>
+          </div>
+          <span style="font-size: 12px;">Прогресс чтения: 42%</span>
+        </div>
+
+        <div class="reader-content">
+          <p style="margin-bottom: 16px;">«...Воланд вышел на сцену в своем обычном черном трико. Публика замерла в ожидании небывалых чудес. По мановению его руки, с потолка начали сыпаться новенькие хрустящие купюры, кружась в воздухе как бабочки...»</p>
+          <p>«...И тут в зале поднялся невероятный гул. Все ринулись ловить летящие деньги. Конферансье Бенгальский тщетно пытался вернуть порядок, заявляя, что это лишь оптический обман...»</p>
+        </div>
+
+        <div class="reader-controls">
+          <div class="font-btns">
+            <span style="font-size: 12px; margin-right: 8px; align-self: center;">Шрифт:</span>
+            <button class="font-btn">14px</button>
+            <button class="font-btn">16px</button>
+            <button class="font-btn-active">18px</button>
+            <button class="font-btn">20px</button>
+          </div>
+          <div>
+            <button class="font-btn">Назад</button>
+            <button class="font-btn-primary">Вперед</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>LibSphere</h3>
+          <p>Современная электронная библиотека.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог книг</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <p>Москва, ул. Чтения, 12</p>
+          <p>info@libsphere.ru</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Электронная библиотека LibSphere.</span>
+        <span>Сделано с любовью к книгам</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
